@@ -1,12 +1,14 @@
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] arg){
-    int studentAge = 15;
     double studentGPA = 3.5;
-    char studentGrade = 'A';
-    boolean isFalse = false;
-    System.out.println(studentAge);
+    String studentFirstName = "Tharindu";
+    String studentLastName = "Kavishna";
+    System.out.println(studentFirstName + " " + studentLastName + " has a GPA " + studentGPA);
+
+    Scanner input = new Scanner(System.in);
+    studentGPA = input.nextDouble();
     System.out.println(studentGPA);
-    System.out.println(studentGrade);
-    System.out.println(isFalse);
   }
 }
