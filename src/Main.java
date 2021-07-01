@@ -2,16 +2,25 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] arg){
+
+    String question = "3+7?";
+    String choiceOne = "1";
+    String choiceTwo = "10";
+    String choiceThree = "100";
+    String correctAnswer = choiceTwo;
+
+    System.out.println(question);
+    System.out.println("1."+ choiceOne + "\n2." + choiceTwo + "\n3." + choiceThree);
+
+    System.out.print("Input Answer is?(1,2ot3): ");
     Scanner input = new Scanner(System.in);
-    boolean isOnRepeat = true;
-    while (isOnRepeat){
-      System.out.println("Playing current song");
-      System.out.println("Would you like to take this song off of repeat? If so answer Yes");
-      String userInput = input.next();
-      if(userInput.equals("Yes")){
-        isOnRepeat = false;
-      }
+    String answer = input.next();
+
+    if(answer.equals("2")){
+      System.out.println("Congarts!!!!!!!!!!!!!");
+    }else {
+      System.out.println("input does not match, correct answer is " + correctAnswer);
     }
-    System.out.println("Playing next song");
+
   }
 }
