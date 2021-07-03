@@ -1,11 +1,11 @@
-import java.util.Scanner;
-
 public class Main {
 
   public static void main(String[] arg){
-    Triangle triangleA = new Triangle(15,8, 15, 8, 10);
-    Triangle triangleB = new Triangle(3, 2.598, 3, 3, 10);
-    System.out.println(triangleA.findArea());
+    StudentProfile profileOne = new StudentProfile("Tharindu", "Kavishna", "SE", 3.75, 2021);
+    StudentProfile profileTwo = new StudentProfile("Tharindu", "Kavishna", "SE", 3.75, 2021);
+
+    profileTwo.incrementExpectedGraduatedYear();
+    System.out.println(profileTwo.expectedYerToGraduationYear);
   }
 
 }
