@@ -1,14 +1,19 @@
+import java.util.Scanner;
+
 public class Main {
 
-  public static void calculateTotalMealPrice(double listedMealPrice, double tipRate, double taxRate){
-    double tip = tipRate * listedMealPrice;
-    double tax = taxRate * listedMealPrice;
-    double result = listedMealPrice + tip + tax;
-    System.out.println("Your total meal price is: " + result);
+  public static double yearSalary(double hoursPerWeek, double amountPerHour){
+    double weeklyPayCheck  = hoursPerWeek * amountPerHour;
+    return  weeklyPayCheck * 52;
   }
 
   public static void main(String[] arg){
-    calculateTotalMealPrice(15, 0.2, 0.08);
-    calculateTotalMealPrice(25, 0.18, 0.08);
+    Scanner input = new Scanner(System.in);
+    System.out.println("Number of hours the employee works per week: ");
+    double weekHours = input.nextDouble();
+    System.out.println("Amount of money the employee makes per hours: ");
+    double moneyHours = input.nextDouble();
+    double salary = yearSalary(weekHours, moneyHours);
+    System.out.println(salary);
   }
 }
