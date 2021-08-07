@@ -1,4 +1,15 @@
 public class Vehicle {
+
+    Vehicle(){
+        System.out.println("Constractur!!!!!!!!!!!!!");
+    }
+
+    Vehicle(String model, int modelYear) {
+        this();
+        this.model = model;
+        this.modelYear = modelYear;
+    }
+
     //    Properties -> field / data
     String model;
     int modelYear;
